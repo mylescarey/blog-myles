@@ -1,0 +1,11 @@
+{
+  "name": "blog-myles",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mylescarey/blog-myles.git",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.17.3",
+    "typescript": "^3.3.4000"
+  }
+}
