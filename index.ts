@@ -7,11 +7,12 @@ const createBlogPost = () => {
     let title = form["blog-title"].value;
     let post = form["blog-post"].value;
 
-    blogPosts.push(new BlogPost(title, post));
-    // console.log(blogPosts);
+    // blogPosts.push(new BlogPost(title, post));
+    // if(blogPosts.length >= 3) {
+    //     moveOldPostsToArchive();
+    // 
     outputBlog(title);
     outputBlogBody(post);
-    // moveOldPostsToArchive();
 }
 
 class BlogPost {
@@ -29,7 +30,6 @@ const outputBlog = (title) => {
     let node = document.createElement("h3"); 
     let textnodetitle = document.createTextNode(title);
     node.appendChild(textnodetitle)
-    // let textnodepost = document.createTextNode("blog-post");
     target.appendChild(node);
 }
 
@@ -38,37 +38,12 @@ const outputBlogBody = (post) => {
     let node = document.createElement("p"); 
     let textnodepost = document.createTextNode(post);
     node.appendChild(textnodepost)
-    // let textnodepost = document.createTextNode("blog-post");
     target.appendChild(node);
 }
 
-// Archive - Needs Work
-/* const outputBlogArchive = (title) => {
-    let target = document.getElementById('archive');
-    let node = document.createElement("h3"); 
-    let textnodetitle = document.createTextNode(title);
-    node.appendChild(textnodetitle)
-    // let textnodepost = document.createTextNode("blog-post");
-    target.appendChild(node);
-}
-
-const outputBlogBodyArchive = (post) => {
-    let target = document.getElementById('archive');
-    let node = document.createElement("p"); 
-    let textnodepost = document.createTextNode(post);
-    node.appendChild(textnodepost)
-    // let textnodepost = document.createTextNode("blog-post");
-    target.appendChild(node);
-}
-
-const moveOldPostsToArchive = () => {
-    let oldPost = blogPosts[0]
-    archive.push(oldPost);
-    blogPosts.shift;
-}
-
-*/
-
+const clearForm = () => {
+    document.getElementById("blog-post-form").reset();
+ }
 
 // Liams code - Not clean but functional
 /* const createBlogPost = () => {
