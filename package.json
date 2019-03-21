@@ -9,7 +9,7 @@
     "typescript": "^3.3.4000"
   },
   "scripts": {
-    "sass-watch": "yarn run sass .:build -- watch",
+    "sass-watch": "yarn run sass .:build --watch",
     "tsc-watch": "yarn run tsc --watch",
     "build-watch": "yarn run sass-watch | yarn run tsc-watch"
   }

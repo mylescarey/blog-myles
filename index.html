@@ -12,21 +12,21 @@
 
 <body>
     <section>
-        <form id="blog-post-form" onsubmit="sayHello(); return false;">
+        <form id="blog-post-form" onsubmit="createBlogPost(); return false;">
             <fieldset>
                 <p>Article Title:</p>
-                <input type="text" name="articletitle">
-            </fieldset>
-
-            <fieldset>
+                <input type="text" id="blog-title">
                 <p>Article Body:</p>
-                <textarea rows="10" cols="75"></textarea>
-            </fieldset>
-            <fieldset>
-                <input type="submit" value="Submit">
+                <textarea rows="10" cols="75" id="blog-post"></textarea>
+                <input type="submit" value="Submit Blog">
             </fieldset>
     </section>
-    </form>
+</form>
+
+    <section id="output-blog">
+        
+    </section>
+  
 
 </body>
 
