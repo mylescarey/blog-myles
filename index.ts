@@ -42,7 +42,6 @@ const outputBlogBody = (post) => {
     target.appendChild(node);
 }
 
-
 // Archive - Needs Work
 /* const outputBlogArchive = (title) => {
     let target = document.getElementById('archive');
