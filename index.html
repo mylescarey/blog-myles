@@ -11,23 +11,26 @@
 </head>
 
 <body>
-    <section>
-        <form id="blog-post-form" onsubmit="createBlogPost(); return false;">
-            <fieldset>
-                <p>Article Title:</p>
-                <input type="text" id="blog-title">
-                <p>Article Body:</p>
-                <textarea rows="10" cols="75" id="blog-post"></textarea>
-                <input type="submit" value="Submit Blog">
-            </fieldset>
-    </section>
-</form>
+    <main>
+        <section class="form-box">
+            <form id="blog-post-form" onsubmit="createBlogPost(); return false;">
+                <fieldset>
+                    <div>
+                        <label for="blog-title"></label>
+                        <input type="text" id="blog-title" class="blog-form" placeholder="What is your blog title">
+                        <label for="blog-post"></label>
+                        <textarea id="blog-post" value="Blog Post" placeholder="Enter your blog post"></textarea>
+                        <input type="submit" value="Submit Blog" id="button">
+                    </div>
+                </fieldset>
+        </section>
+        </form>
 
-    <section id="output-blog">
-        
-    </section>
-  
+        <section id="output-blog">
 
+        </section>
+
+    </main>
 </body>
 
 </html>
