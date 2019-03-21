@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,25 @@
     <script src="build/index.js"></script>
     <title>Myles' Blog</title>
 </head>
-<body onload="sayHello()">
-    this is where my blog will go...
+
+<body>
+    <section>
+        <form id="blog-post-form" onsubmit="sayHello(); return false;">
+            <fieldset>
+                <p>Article Title:</p>
+                <input type="text" name="articletitle">
+            </fieldset>
+
+            <fieldset>
+                <p>Article Body:</p>
+                <textarea rows="10" cols="75"></textarea>
+            </fieldset>
+            <fieldset>
+                <input type="submit" value="Submit">
+            </fieldset>
+    </section>
+    </form>
+
 </body>
+
 </html>
